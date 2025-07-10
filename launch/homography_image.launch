@@ -1,0 +1,7 @@
+<launch>
+    <node name="homography" pkg="homography" type="homography.py" output="screen">
+        <param name="image_path" value="$(find homography)/test_image.jpg"/>
+        <param name="output_path" value="$(find homography)/output.png"/>
+        <param name="output_height" value="1200"/>
+    </node>
+</launch>
